@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Equações do 2º Grau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Equações do 2º Grau</h1>
+        <div class="campos">
+            <div class="box">
+                <h3>Valor de a:</h3>
+                <input type="number" id="valorA" placeholder="Insira o valor de A">
+            </div>
+            <div class="box">
+                <h3>Valor de b:</h3>
+                <input type="number" id="valorB" placeholder="Insira o valor de B">
+            </div>
+            <div class="box">
+                <h3>Valor de c:</h3>
+                <input type="number" id="valorC" placeholder="Insira o valor de C">
+            </div>
+        </div>
+    </header>
+    <main>
+        <input class="botao" type="submit" onclick="capturar()" value="CALCULAR">
+        <div class="respostas">
+            <h6>X1 = </h6>
+            <p id="x1"></p>
+            <h6>X2 = </h6>
+            <p id="x2"></p>
+            <div id="erro" style='display: none;'><p>Sem raízes reais</p></div> 
+        </div>
+        <p id="creditos">Leo Bizzocchi Kusunoki - 2023</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
